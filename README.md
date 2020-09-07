@@ -10,7 +10,7 @@ go to location of cloned repository
 
 ### 2: cd typescript-exercise
 
-instalation
+installation
 
 ### 3: npm install
 
