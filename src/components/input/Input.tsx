@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Input.module.sass";
+import styles from "./Input.module.scss";
 
 interface InputProps {
   name: string;

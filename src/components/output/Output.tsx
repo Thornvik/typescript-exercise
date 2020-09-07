@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./Output.module.scss";
+
 type OutputProps = {
   name: string;
   paragraph: string;
@@ -7,9 +9,9 @@ type OutputProps = {
 
 const Output = ({ name, paragraph }: OutputProps) => {
   return (
-    <div>
-      <p>Output {name}</p>
-      <p>Output {paragraph}</p>
+    <div className={styles.outputContainer}>
+      <p className={styles.name}>{name}</p>
+      <p className={styles.paragraph}>{paragraph}</p>
     </div>
   );
 };
