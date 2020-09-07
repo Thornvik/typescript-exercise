@@ -1,0 +1,16 @@
+.outputContainer {
+  margin: 0 auto 5rem auto;
+  width: var(--base-width);
+  min-width: 500px;
+  padding: 1rem;
+  .name {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    letter-spacing: 0.25em;
+    margin-bottom: 1rem;
+  }
+  .paragraph {
+    color: rgb(35, 0, 75);
+    font-size: 1.5rem;
+  }
+}
