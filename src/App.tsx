@@ -1,17 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import "./App.css";
 
 import Input from "./components/input/Input";
 import Output from "./components/output/Output";
 
 function App() {
-  const [values, setValue] = useState("hello");
+  const [name, setName] = useState("hello");
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
 
   return (
     <div className="App">
-      <Output name="Ture" paragraph="hipster ipsum"></Output>
-      <Output name="milena" paragraph="hipster ipsum"></Output>
-      <Input name={values}></Input>
+      <Output name="ture" paragraph="hipster ipsum"></Output>
+      <Output name={name} paragraph="hipster ipsum"></Output>
+      <Input name={name} onChange={handleChange}></Input>
     </div>
   );
 }

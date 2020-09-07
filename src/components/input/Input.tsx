@@ -1,13 +1,14 @@
 import React from "react";
 
-type InputProps = {
+interface InputProps {
   name: string;
-};
+  onChange: any;
+}
 
-const Input = ({ name }: InputProps) => {
+const Input = ({ name, onChange }: InputProps) => {
   return (
     <div>
-      <input type="text" value={name} />
+      <input type="text" value={name} onChange={onChange} />
     </div>
   );
 };
