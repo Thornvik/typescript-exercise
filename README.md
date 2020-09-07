@@ -16,4 +16,4 @@ instalation
 
 start the project
 
-### 3: npm start
+### 4: npm start
