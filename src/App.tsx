@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
-function App() {
-  function hello() {
-    console.log("helo");
-  }
+import Input from "./components/input/Input";
+import Output from "./components/output/Output";
 
-  return <div className="App"></div>;
+function App() {
+  const [values, setValue] = useState("hello");
+
+  return (
+    <div className="App">
+      <Output name="Ture" paragraph="hipster ipsum"></Output>
+      <Output name="milena" paragraph="hipster ipsum"></Output>
+      <Input name={values}></Input>
+    </div>
+  );
 }
 
 export default App;
