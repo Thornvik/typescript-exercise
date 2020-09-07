@@ -1,12 +1,10 @@
-.inputContainer {
-  input {
-    font-family: "Courier New";
-    width: var(--base-width);
-    min-width: 500px;
-    height: 4rem;
-    text-align: center;
-    font-size: 2rem;
-    border-radius: 1em;
-    border: solid 1px #c2c2c2;
-  }
+input {
+  font-family: "Courier New";
+  width: var(--base-width);
+  min-width: 500px;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 1em;
+  border: solid 1px #c2c2c2;
 }
